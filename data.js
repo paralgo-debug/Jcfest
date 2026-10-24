@@ -22,14 +22,9 @@ const CATEGORIAS = [
   {
     slug: "atracoes-aquaticas", titulo: "Atrações Aquáticas", icone: "💦", cor: "blue",
     resumo: "Refresque a festa com toboáguas e espuma para a criançada se molhar e rir sem parar.",
-    images: [],
+    images: ["aquaticas-1.jpg", "aquaticas-2.jpg"],
     produtos: [
-      { nome: "Toboágua Premium", desc: "​Diversão refrescante para toda a família!
-Com estrutura reforçada e design imponente, o Toboágua Premium entrega uma experiência única de escorregadas longas, muita água e momentos inesquecíveis de alegria.
-​Conta com laterais de proteção e área de impacto segura, garantindo mais tranquilidade durante toda a brincadeira.
-​Indicado para crianças a partir de 2 anos até adultos.
-​Ideal para aniversários, confraternizações, eventos familiares e corporativos — diversão garantida para todas as idades no mesmo espaço.
-​👉 Mais altura, mais emoção,mais memórias.", images: [] },
+      { nome: "Toboágua Premium", desc: "Escorregador aquático de alta qualidade, com rampa longa e segura. Pura adrenalina nos dias de calor.", images: [] },
       { nome: "Tobogã Golfinho Gigante 3 em 1", desc: "Três diversões em uma só atração: escorregador, escalada e piscina. O queridinho da garotada.", images: [] },
       { nome: "Canhão de Espuma", desc: "Uma chuva de espuma colorida que transforma qualquer espaço em pista de dança para as crianças.", images: [] },
     ],
@@ -37,7 +32,7 @@ Com estrutura reforçada e design imponente, o Toboágua Premium entrega uma exp
   {
     slug: "futebol-de-sabao", titulo: "Futebol de Sabão", icone: "⚽", cor: "red",
     resumo: "Escorrega, cai e se diverte! O jogo mais animado e espumante da festa.",
-    images: [],
+    images: ["futebol-sabao-1.jpg", "futebol-sabao-2.jpg"],
     produtos: [
       { nome: "Futebol de Sabão 10x5", desc: "Campo grande para times cheios. Ideal para festas com muitos convidados e muita risada.", images: [] },
       { nome: "Futebol de Sabão 8x4", desc: "Tamanho perfeito para espaços médios, com a mesma diversão escorregadia do campo maior.", images: [] },
@@ -47,7 +42,7 @@ Com estrutura reforçada e design imponente, o Toboágua Premium entrega uma exp
   {
     slug: "tobogas", titulo: "Tobogã", icone: "🛝", cor: "yellow",
     resumo: "Escorregadores gigantes e coloridos para descer, subir e repetir a diversão.",
-    images: [],
+    images: ["toboga-1.jpg"],
     produtos: [
       { nome: "Tobogã Premium", desc: "Estrutura reforçada, rampa alta e descida emocionante. Segurança e diversão para todas as idades.", images: [] },
       { nome: "Tobogã Golfinho Gigante", desc: "Visual encantador de golfinho, com escorregador amplo que faz sucesso entre os pequenos.", images: [] },
@@ -58,7 +53,7 @@ Com estrutura reforçada e design imponente, o Toboágua Premium entrega uma exp
   {
     slug: "castelo", titulo: "Castelo", icone: "🏰", cor: "red",
     resumo: "Castelos infláveis para pular, brincar e viver a fantasia de um reino de festa.",
-    images: [],
+    images: ["castelo-1.jpg", "castelo-2.jpg"],
     produtos: [
       { nome: "Castelo Pula-pula", desc: "O clássico castelo inflável com espaço para pular à vontade, colorido e seguro.", images: [] },
       { nome: "Castelo c/escorregado", desc: "Pula-pula e escorregador no mesmo brinquedo. Mais diversão em menos espaço.", images: [] },
