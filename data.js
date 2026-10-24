@@ -24,7 +24,12 @@ const CATEGORIAS = [
     resumo: "Refresque a festa com toboáguas e espuma para a criançada se molhar e rir sem parar.",
     images: [],
     produtos: [
-      { nome: "Toboágua Premium", desc: "Escorregador aquático de alta qualidade, com rampa longa e segura. Pura adrenalina nos dias de calor.", images: [] },
+      { nome: "Toboágua Premium", desc: "​Diversão refrescante para toda a família!
+Com estrutura reforçada e design imponente, o Toboágua Premium entrega uma experiência única de escorregadas longas, muita água e momentos inesquecíveis de alegria.
+​Conta com laterais de proteção e área de impacto segura, garantindo mais tranquilidade durante toda a brincadeira.
+​Indicado para crianças a partir de 2 anos até adultos.
+​Ideal para aniversários, confraternizações, eventos familiares e corporativos — diversão garantida para todas as idades no mesmo espaço.
+​👉 Mais altura, mais emoção,mais memórias.", images: [] },
       { nome: "Tobogã Golfinho Gigante 3 em 1", desc: "Três diversões em uma só atração: escorregador, escalada e piscina. O queridinho da garotada.", images: [] },
       { nome: "Canhão de Espuma", desc: "Uma chuva de espuma colorida que transforma qualquer espaço em pista de dança para as crianças.", images: [] },
     ],
