@@ -1,0 +1,106 @@
+:root{
+  --yellow:#FFD500; --yellow-soft:#FFF3A8; --red:#E8141C; --blue:#1E6FD9;
+  --ink:#000; --white:#fff; --paper:#FFFBE6;
+  --font-display:"Baloo 2","Trebuchet MS",sans-serif;
+  --font-body:"Nunito","Segoe UI",sans-serif;
+  --line:3px solid var(--ink);
+  --pop:5px 5px 0 var(--ink);
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);font-size:1.05rem;line-height:1.55;color:var(--ink);background:var(--paper)}
+img{max-width:100%;display:block}
+a{color:inherit}
+:focus-visible{outline:4px solid var(--blue);outline-offset:3px}
+h1,h2,h3{font-family:var(--font-display);font-weight:800;line-height:1.05}
+.wrap{width:min(1120px,100% - 2rem);margin-inline:auto}
+
+/* Botões */
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-display);font-weight:800;font-size:1.1rem;
+  padding:.7rem 1.4rem;border:var(--line);border-radius:999px;text-decoration:none;cursor:pointer;
+  box-shadow:var(--pop);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(2px,2px);box-shadow:3px 3px 0 var(--ink)}
+.btn:active{transform:translate(5px,5px);box-shadow:0 0 0 var(--ink)}
+.btn-red{background:var(--red);color:var(--white)}
+.btn-yellow{background:var(--yellow)}
+.btn-white{background:var(--white)}
+.btn-wa{background:#25D366}
+
+/* Cabeçalho */
+.top{background:var(--yellow);border-bottom:var(--line);position:sticky;top:0;z-index:20}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding-block:.5rem}
+.top img{height:54px;width:auto}
+.nav{display:flex;align-items:center;gap:1.2rem;font-family:var(--font-display);font-weight:700}
+.nav a{text-decoration:none}
+.nav a:not(.btn):hover{text-decoration:underline;text-decoration-thickness:3px}
+.nav .btn{padding:.4rem 1rem;font-size:1rem;box-shadow:3px 3px 0 var(--ink)}
+@media(max-width:640px){.nav a:not(.btn){display:none}}
+
+/* Hero */
+.hero{background:var(--yellow);border-bottom:var(--line);padding:2.5rem 0 3.5rem;overflow:hidden}
+.hero .wrap{display:grid;gap:2rem;align-items:center}
+@media(min-width:860px){.hero .wrap{grid-template-columns:1.1fr .9fr}}
+.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);margin-bottom:1rem}
+.hero h1 em{font-style:normal;background:var(--red);color:var(--white);padding:0 .25em;border:var(--line);border-radius:.25em;display:inline-block;transform:rotate(-2deg)}
+.hero p{font-size:1.2rem;max-width:34ch;margin-bottom:1.5rem;font-weight:600}
+.hero .acoes{display:flex;flex-wrap:wrap;gap:1rem}
+.hero-logo{width:min(440px,100%);justify-self:center;animation:flutuar 4s ease-in-out infinite}
+@keyframes flutuar{50%{transform:translateY(-12px) rotate(-1.5deg)}}
+
+/* Seções */
+.secao{padding:3.5rem 0}
+.secao h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:.5rem}
+.secao .sub{max-width:52ch;margin-bottom:2rem;font-weight:600}
+
+/* Cards de categoria */
+.grade{display:grid;gap:1.6rem;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
+.card{background:var(--white);border:var(--line);border-radius:1.2rem;box-shadow:var(--pop);overflow:hidden;display:flex;flex-direction:column}
+.card .foto{aspect-ratio:4/3;border-bottom:var(--line);background:var(--yellow-soft)}
+.card .foto img{width:100%;height:100%;object-fit:cover}
+.card .corpo{padding:1.1rem 1.2rem 1.3rem;display:flex;flex-direction:column;gap:.6rem;flex:1}
+.card h3{font-size:1.6rem}
+.card p{flex:1}
+.card .btn{align-self:flex-start;font-size:1rem;padding:.5rem 1.1rem;box-shadow:3px 3px 0 var(--ink)}
+.tag-blue{background:var(--blue);color:var(--white)}
+.tag-red{background:var(--red);color:var(--white)}
+.tag-yellow{background:var(--yellow)}
+
+/* Carrossel */
+.car{position:relative}
+.car .pista{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:4/3}
+.car .pista::-webkit-scrollbar{display:none}
+.car .pista img{flex:0 0 100%;width:100%;height:100%;object-fit:cover;scroll-snap-align:center}
+.car button{position:absolute;top:50%;translate:0 -50%;width:2.4rem;height:2.4rem;border-radius:50%;border:var(--line);
+  background:var(--white);font:800 1.2rem var(--font-display);cursor:pointer;line-height:1}
+.car .ant{left:.5rem}.car .prox{right:.5rem}
+.car button:hover{background:var(--yellow)}
+
+/* Página de categoria */
+.cab-cat{border-bottom:var(--line);padding:2.5rem 0}
+.cab-cat h1{font-size:clamp(2.2rem,6vw,3.6rem);margin:.4rem 0}
+.cab-cat p{max-width:52ch;font-weight:600}
+.voltar{font-family:var(--font-display);font-weight:700;text-decoration:none;display:inline-block}
+.voltar:hover{text-decoration:underline}
+.produtos{display:grid;gap:2rem;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));padding:2.5rem 0 4rem}
+.produto .corpo{padding:1.1rem 1.2rem 1.4rem}
+.produto h2{font-size:1.5rem;margin-bottom:.4rem}
+.produto p{margin-bottom:1rem}
+
+/* CTA final */
+.cta{background:var(--blue);color:var(--white);border-block:var(--line);text-align:center;padding:3.5rem 0}
+.cta h2{font-size:clamp(2rem,5vw,3rem);margin-bottom:.6rem}
+.cta p{max-width:46ch;margin:0 auto 1.6rem;font-weight:600}
+.cta .acoes{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
+.cta .btn{color:var(--ink)}
+
+/* Rodapé */
+.rodape{background:var(--yellow);padding:1.5rem 0 5rem;font-weight:700;text-align:center}
+.rodape a{text-decoration-thickness:2px}
+
+/* Botão flutuante */
+.flutuante{position:fixed;right:1rem;bottom:1rem;z-index:30;width:62px;height:62px;border-radius:50%;
+  background:#25D366;border:var(--line);box-shadow:var(--pop);display:grid;place-items:center}
+.flutuante:hover{transform:scale(1.07)}
+.flutuante svg{width:34px;height:34px;fill:var(--white)}
+
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
