@@ -55,6 +55,7 @@ if (gradeCats) {
       <div class="corpo">
         <h3>${c.titulo}</h3>
         <p>${c.resumo}</p>
+        <ul class="itens" aria-label="Brinquedos desta categoria">${c.produtos.map((p) => `<li>${p.nome}</li>`).join("")}</ul>
         <a class="btn tag-${c.cor}" href="categoria.html?c=${c.slug}">Saber mais</a>
       </div>
     </article>`).join("");
